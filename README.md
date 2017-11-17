@@ -7,7 +7,7 @@
 5. within the src directory in your project, create 2 packages: `jslibs` and `jsheaders`
 6. download `jquery.js` from https://jquery.com/download/ and place it in `jslibs`
 7. move the `jquery.kt` header file you generated (should be in the headers dir where you ran ts2kt) to `jsheaders`
-6. create a new html file within the Kotlin project. the project should have an `index.html` file at the top level that includes the following:
+8. create a new html file within the Kotlin project. the project should have an `index.html` file at the top level that includes the following:
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +27,7 @@
 ```
 make sure to change name_of_project to... the name of the project you chose
 
-7. create a kotlin file within source called Main.kt with the following:
+9. create a kotlin file within source called Main.kt with the following:
 ```
 fun jQuery(x: String) = jQuery(x, null as JQuery?)
 
@@ -45,6 +45,6 @@ object Main {
 }
 
 ```
-8. double click the index.html file
-9. at the top right, select a browser icon to open the file
-10. congrats!
+10. double click the index.html file
+11. at the top right, select a browser icon to open the file
+12. congrats!
