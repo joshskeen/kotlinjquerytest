@@ -2,12 +2,12 @@
 
 1. `curl https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/jquery/index.d.ts > jquery.d.ts`
 2. install the typescript-to-kotlin converter: `npm -g install ts2kt` ( https://github.com/Kotlin/ts2kt )
-3. convert jquery.d.ts to jquery.kt by running `ts2kt -d headers jquery.d.ts`
-4. create a new kotlin project and target jslibs for the runtime
-5. within the src directory, create 2 packages: `jslibs` and `jsheaders`
-6. download jquery.js from https://jquery.com/download/ and place it in `jslibs`
-7. move the jquery.kt header file you generated (should be in the headers dir where you ran ts2kt) to `jsheaders`
-6. create a new html file within the kotlin project. the project should have an index.html file at the top level that includes the following:
+3. convert `jquery.d.ts` to `jquery.kt` by running `ts2kt -d headers jquery.d.ts`
+4. create a new kotlin project and target `js` for the runtime
+5. within the src directory in your project, create 2 packages: `jslibs` and `jsheaders`
+6. download `jquery.js` from https://jquery.com/download/ and place it in `jslibs`
+7. move the `jquery.kt` header file you generated (should be in the headers dir where you ran ts2kt) to `jsheaders`
+6. create a new html file within the Kotlin project. the project should have an `index.html` file at the top level that includes the following:
 ```
 <!DOCTYPE html>
 <html lang="en">
